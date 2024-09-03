@@ -1,0 +1,42 @@
+.topic-header {
+    color: black;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: calc(10px + 15vmin);
+    text-align: left;
+    padding-left: 7%;
+
+}
+
+.topic-header-color {
+    display: inline-block;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: rgb(155, 12, 88);
+}
+
+.topic-para {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: calc(5px + 2vmin);
+    text-align: left;
+    padding-left: 8%;
+    padding-top: 2%;
+    // padding: 0.1%;
+}
+
+.topic-button {
+    padding-top: 3%;
+    text-align: left;
+    padding-left: 12%;
+}
+
+button {
+    background-color: rgb(99, 24, 68);
+    color:white;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: calc(8px + 2vmin);;
+    cursor: pointer;
+}
