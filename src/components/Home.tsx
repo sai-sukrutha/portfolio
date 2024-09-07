@@ -12,14 +12,16 @@ function Home() {
             </div>
             <div className='topic-para' >
                 <table>
-                    <tr>Software Engineer with 5+ years experience.</tr>
-                    <tr>3 years as a Full Stack Developer.</tr>
-                    <tr>Currently looking out for new oppurtunities.</tr>
-                    <tr>Residing in Plano, Texas.</tr>
+                    <tbody>
+                        <tr><td>Software Engineer with 5+ years experience.</td></tr>
+                        <tr><td>3 years as a Full Stack Developer.</td></tr>
+                        <tr><td>Currently looking out for new oppurtunities.</td></tr>
+                        <tr><td>Residing in Plano, Texas.</td></tr>
+                    </tbody>
                 </table>
             </div>
             <div className='topic-button'>
-                <button>Hire Me</button>
+                 <button>Hire Me</button>
             </div>
         </div>
     )

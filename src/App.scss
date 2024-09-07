@@ -3,9 +3,9 @@ body {
   background-size: cover;
 }
 
-.App {
-    /* text-align: center; */
-  }
+// .App {
+//     /* text-align: center; */
+//   }
   
   /* .App-logo {
     height: 40vmin;
@@ -46,4 +46,13 @@ body {
       transform: rotate(360deg);
     }
   } */
+
+// Overrding bootstrap color
+$body-bg: rgb(255, 222, 245);
+$warning: rgb(99, 24, 68);  
+
+
+
+  @import '~bootstrap/scss/bootstrap';
+  /*importing bootstrap in the end as changing bootstrap colors*/
   
