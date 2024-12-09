@@ -1,0 +1,21 @@
+$background_color: rgb(255, 222, 245);  // very light lavendar
+
+$primary_color: rgb(255, 192, 241);     //lavendar
+
+//Accent for header and buttons
+$accent_color: rgb(116, 20, 76);
+$accent_darker: darken($accent_color, 10%);
+$accent_lighter: lighten($accent_color, 10%);
+
+// Centre color - for extra highlights
+$centre_color: rgb(183, 44, 118);
+$centre_light: darken($centre_color, 10%);
+$centre_darker: lighten($centre_color, 10%);
+
+//text colors
+$black_text: black;
+$white_text: $background_color;     // Background almost = white, slightly lavendar
+$white_dark_text: darken($white_text, 20%);     // For highlight, hover
+$white_light_text: lighten($white_text, 10%);
+
+

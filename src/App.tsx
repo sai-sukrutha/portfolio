@@ -4,12 +4,12 @@ import Home from './components/Home';
 import {Route,Routes} from "react-router-dom";
 // import About from "./components/About";
 // import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import Projects from './components/Projects';
+import Experience from './components/pages/Experience';
+import Education from './components/pages/Education';
+import Projects from './components/pages/Projects';
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 // TODO: Delete .css files
@@ -18,9 +18,11 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <Menu />
-      </header>
+      </header> */}
+
+      <Menu/>
 
       <Routes>
           <Route path='/' element={<Home />} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.scss';
+import './styles/Home.scss';
 
 // TODO: Fill all the details from data file (json?) later including experience and all
 

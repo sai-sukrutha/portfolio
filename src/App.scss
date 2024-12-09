@@ -1,58 +1,33 @@
 body {
-  background-color: rgb(255, 222, 245);
+  background-color: rgb(255, 222, 245);   //TODO: Using color instead of importing colors.scss
   background-size: cover;
 }
 
-// .App {
-//     /* text-align: center; */
-//   }
+.App {
+  height: 100%;
+  width: 100%;
+}
   
-  /* .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  } */
+  // .App-header {
+    // background-color: rgb(99, 24, 68);
+    // min-height: 10%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: left;
   
-  /* @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  } */
+    // p {
+    //   color: white;
+    //   font-size: calc(10px + 2vmin);
+    //   font-family: 'Times New Roman', Times, serif;
+    //   padding-left: 1.5%;
+    // }
   
-  .App-header {
-    background-color: rgb(99, 24, 68);
-    min-height: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-  
-    p {
-      color: white;
-      font-size: calc(10px + 2vmin);
-      font-family: 'Times New Roman', Times, serif;
-      padding-left: 1.5%;
-    }
-  
-  }
-  
-  /* .App-link {
-    color: #61dafb;
-  } */
-  
-  /* @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  } */
+  // }
 
 // Overrding bootstrap color
-$body-bg: rgb(255, 222, 245);
-$warning: rgb(99, 24, 68);  
+// $body-bg: rgb(255, 222, 245);
+// $warning: rgb(99, 24, 68);  
 
-
-
-  @import '~bootstrap/scss/bootstrap';
+  // @import '~bootstrap/scss/bootstrap';
   /*importing bootstrap in the end as changing bootstrap colors*/
   
