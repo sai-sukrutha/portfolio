@@ -1,8 +1,6 @@
 @import "colors";
 
-.active {
-  background-color: $accent_lighter;
-}
+$responsive_breakpoint: 480px;
 
 nav {
     display: flex;
@@ -12,19 +10,80 @@ nav {
     position: sticky;       // Menu on top always
     top:0;
 
-    nav.brand {
-      font-size: 1.5rem;
+    @media (max-width: $responsive_breakpoint) {
+      // flex-direction: column;
+      align-items: start;
+    }
+
+    .brand {
+      font-size: 1.2rem;
       margin: 1rem;
       font-weight: bold;
       text-decoration: none;
-      color: white;
+      color: $white_text;
+
+      @media (max-width:$responsive_breakpoint) {
+        margin: 0.3rem;
+      }
     }
+
+    .brand:hover {
+      color: $white_dark_text;
+    }
+
+    .menu_lines {
+      display: none;
+      position: absolute;
+      top: 0.75rem;
+      right: 0.5rem;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 1.2rem;
+      height: 1.2rem;
+
+      @media (max-width:$responsive_breakpoint) {
+        display: flex;
+      }
+
+      span {
+        height:0.2rem;
+        width: 100%;
+        background-color: white;
+        border-radius: 0.2rem;
+      }
+
+    }
+
 
     ul {
       display: flex;
+      flex-direction: row;
+
+      .open {
+        display:flex;
+        padding-right: 2rem;
+        @media (max-width: $responsive_breakpoint) {
+          flex-direction: column;       
+          margin-bottom: 0.25rem;
+          float: right;
+        }
+      } 
+
+      .close {
+        display:flex;
+
+        @media (max-width: $responsive_breakpoint) {
+          display: none;
+        }
+      }
 
       li {
         list-style: none;       // no bullets
+
+        @media (max-width: $responsive_breakpoint) {
+          width: 100%;
+          text-align: center;
+        }
 
         a{
           display: block;
@@ -36,7 +95,19 @@ nav {
           border-style: none;
         }
 
-        a:not(.active):hover {      // hover color should apply only for not active
+        @media (max-width: $responsive_breakpoint) {
+          margin: 0.2rem 0.5rem;
+        }
+
+        .active {
+          background-color: $accent_lighter;
+        }
+
+        // a:not(.active):hover {      // hover color should apply only for not active
+        //   color: $white_dark_text;
+        // }
+
+        a:hover {      // TODO: No need for not active check I felt
           color: $white_dark_text;
         }
       }

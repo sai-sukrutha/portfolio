@@ -1,4 +1,4 @@
-// import React from 'react';
+import {useState} from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import './styles/Menu.scss';
 
@@ -39,32 +39,42 @@ import './styles/Menu.scss';
 
 //   );
 // };
-// Bootstrap sloe=wing down the website
+// Bootstrap slowing down the website
+
 
 // Using simple rendering and Reactor router Links
 const Menu = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav>
+      <Link to='/' className="brand">Sai Sukrutha</Link>  {/* TODO: Add Brand image SS*/}
+      {/* NOTE: This is Link and not NavLink as we don't want it to be highlighted when clicked*/}
+      
+      <div className='menu_lines' onClick={() => { setMenuOpen(!menuOpen); }} >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
       <ul>
-        <li>
-          <Link to='/' className="brand">Sai Sukrutha</Link>  {/* TODO: Add Brand image SS*/}
-          {/* NOTE: This is Link and not NavLink as we don't want it to be highlighted when clicked*/}
-        </li>
-        {/* <li>
-          <NavLink to='/about'>About</NavLink>
-        </li>
-        <li>
-          <NavLink to='./skills'>Skills</NavLink>
-        </li> */}
-        <li>
-          <NavLink to='/experience'>Experience</NavLink>
-        </li>
-        <li>
-          <NavLink to='/education'>Education</NavLink>
-        </li>
-        <li>
-          <NavLink to='/projects'>Projects</NavLink>
-        </li>
+        <div className={menuOpen ? 'open' : 'close'}>
+          <li>
+            <NavLink to='/experience'>Experience</NavLink>
+          </li>
+          <li>
+            <NavLink to='/education'>Education</NavLink>
+          </li>
+          <li>
+            <NavLink to='/projects'>Projects</NavLink>
+          </li>
+          {/* <li>
+            <NavLink to='/about'>About</NavLink>
+          </li>
+          <li>
+            <NavLink to='./skills'>Skills</NavLink>
+          </li> */}
+        </div>
       </ul>
     </nav>
   );
