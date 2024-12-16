@@ -18,4 +18,8 @@ $white_text: $background_color;     // Background almost = white, slightly laven
 $white_dark_text: darken($white_text, 20%);     // For highlight, hover
 $white_light_text: lighten($white_text, 10%);
 
+// shadow or box
+$grey_box: rgba(52, 52, 52, 0.5);
+$grey_shadow: rgba(70, 70, 70, 0.3);
+
 

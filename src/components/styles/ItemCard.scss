@@ -1,0 +1,78 @@
+@import "colors";
+
+// Lato Google font
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// Roboto Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$responsive_breakpoint: 480px;
+
+.wrapper {
+    margin: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr;        // TODO
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+    @media (max-width: $responsive_breakpoint) {
+        grid-template-columns: 1fr;        // TODO   
+    }
+}
+
+
+.card {
+    border: 1px solid $grey_box;
+    border-radius: 0.2rem;
+    box-shadow: 5px 5px 5px $grey_shadow;
+    padding: 5px;      // within objects of card
+    margin: 6px;       // outside the card
+    min-width: 50rem;
+    display: flex;
+
+    @media (max-width: $responsive_breakpoint) {
+        flex-direction: column;
+        min-width: 8rem;
+        text-align: center;
+    }
+
+    .card_img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: fill;
+        margin: auto;
+        padding-left: 10px;
+        opacity: 0.9;
+        z-index: -1;    // because of opacity
+
+        @media (max-width: $responsive_breakpoint) {
+            padding-top: 10px;
+            // text-align:center;
+        }
+    }
+
+    .card_body {
+        margin: 1rem;
+        flex-grow: 1;
+
+        .card_title {
+            a {
+                text-decoration: none;
+                color: $accent_color;
+            }
+
+            a:hover {
+                color: $accent_lighter;
+            }
+        }
+
+        .card_role {
+            // font-weight: bold;
+            font-weight: 500;
+        }
+    }
+
+
+}
