@@ -1,8 +1,12 @@
 import React from 'react';
+import Menu from '../Menu';
 
 const Skills = () => {
     return (
-        <div>Skills</div>
+        <div>
+            <Menu/>
+            <p> Projects </p>
+        </div>
     );
 }
 
