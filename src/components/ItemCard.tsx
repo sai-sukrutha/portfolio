@@ -14,9 +14,10 @@ interface ItemCardProps {
 }
 
 export const ItemCard = (props: ItemCardProps) => {
+  const altText = `${props.title} Logo`
   return (
     <div className='card'>
-        <img className='card_img' src={props.img}/>      {/* TODO: href to where for image and title or anywhere - to description, there to website??  */}
+        <img className='card_img' src={props.img} alt={altText}/>      {/* TODO: href to where for image and title or anywhere - to description, there to website??  */}
         <div className='card_body' >
             <h2 className='card_title'><a href={props.title_link} target='_blank'>{props.title}</a></h2>
             <p className='card_role'>{props.role}</p>

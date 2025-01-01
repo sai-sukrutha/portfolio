@@ -1,5 +1,7 @@
+@import "./components/styles/colors.scss";
+
 body {
-  background-color: rgb(255, 222, 245);   //TODO: Using color instead of importing colors.scss
+  background-color: $background_color;   //TODO: Using color instead of importing colors.scss
   background-size: cover;
 }
 

@@ -7,13 +7,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 $responsive_breakpoint: 480px;
+$responsive_breakpoint2: 680px;
 
 .wrapper {
     margin: 2rem;
     display: grid;
     gap: 1rem;
     grid-template-rows: 1fr;        // TODO
-    justify-content: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 
@@ -29,12 +29,12 @@ $responsive_breakpoint: 480px;
     box-shadow: 5px 5px 5px $grey_shadow;
     padding: 5px;      // within objects of card
     margin: 6px;       // outside the card
-    min-width: 50rem;
+    min-width: 80%;
+    max-width: 90%;
     display: flex;
 
     @media (max-width: $responsive_breakpoint) {
         flex-direction: column;
-        min-width: 8rem;
         text-align: center;
     }
 

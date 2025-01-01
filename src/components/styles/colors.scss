@@ -1,4 +1,4 @@
-$background_color: rgb(255, 222, 245);  // very light lavendar
+$background_color: rgb(253, 228, 247);  // very light lavendar (almost white)
 
 $primary_color: rgb(255, 192, 241);     //lavendar
 
@@ -14,7 +14,7 @@ $centre_darker: lighten($centre_color, 10%);
 
 //text colors
 $black_text: black;
-$white_text: $background_color;     // Background almost = white, slightly lavendar
+$white_text: rgb(254, 239, 250);     // slightly lavendar (same as background color)
 $white_dark_text: darken($white_text, 20%);     // For highlight, hover
 $white_light_text: lighten($white_text, 10%);
 
