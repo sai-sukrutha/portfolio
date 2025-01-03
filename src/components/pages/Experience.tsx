@@ -9,7 +9,7 @@ export const Experience = () => {
   // console.log(params);
 
   const data = useLocation().state;
-  console.log("Data", data);
+  // console.log("Data", data);
   const [experience, setExperience] = useState<ProjectProps>(data);
   // setExperience(data);   // This caused TOO many renders Run time Error.
 
@@ -25,9 +25,9 @@ export const Experience = () => {
                   name = {experience.name}
                   role= {experience.role}
                   img = {experience.img}
-                  titleLink= {experience.titleLink}
-                  location= {experience.location}
-                  startDate= {experience.startDate}
+                  titleLink = {experience.titleLink}
+                  location = {experience.location}
+                  startDate = {experience.startDate}
                   endDate = {experience.endDate}
                   description= {experience.description}
                   skills = {experience.skills}

@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "name": "Portfolio Website",
+            "titleLink": "https://github.com/sai-sukrutha/portfolio",
+            "description": [
+                "Developed this personal portfolio website to showcase my Skills, Experience, Educational Background, Projects and Hobbies with an interactive, visually appealing and mobile-friendly responsive UI using React, SCSS."
+            ],
+            "skills": [
+                "React", "TypeScript", "JavaScript", "HTML", "CSS", "SCSS"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Ride Sharing Website",
+            "titleLink": "https://github.com/sai-sukrutha/PrimeRide",
+            "description": [
+                "Designed PrimeRide, a ride-sharing platform where users can offer or join rides across cities using Flask, SQLite with security features like login, email authentication, phone verification via OTP, and passwords encrypted using bcrypt.",
+                "Implemented advanced features like Google Maps integration for route selection, rides history, and real-time email notifications for ride updates ensuring a seamless user experience including an engaging UI using Jinja templates and Bootstrap."
+            ],
+            "skills": [
+                "Flask", "Python", "SQLite", "JavaScript", "JQuery", "Jinja", "HTML", "CSS", "Bootstrap", "Atom"
+            ]
+        }, 
+        {
+            "id": "3",
+            "name": "Application Platform for Tensorflow & IoT Edge Applications",
+            "titleLink": "https://github.com/sai-sukrutha/AI_On_The_Edge_Platform",
+            "description": [
+                "Designed an application platform to deploy and run tensorflow edge applications with advanced features like Scalability, Load Balancing, Real-time data streaming, Fault Tolerance, Reliability etc.,",
+                "Using Microservices Architecture, many services including Deployment Manager, Docker Manager, Scheduler, Logger, Monitor, etc., were implemented. All of the services communicate with one another using RabbitMQ message queues.",
+                " Created a simple UI that facilitates users to deploy their edge application following a predefined structure with XML style configuration. Dockers are used to contain the deployed services with dependencies and they are run in remote machines."
+            ],
+            "skills": [
+                "Python", "RabbitMQ", "Docker", "Flask", "XML", "RestAPI", "Microservices Architecture"
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Automated Quiz Evaluation System",
+            "titleLink": "https://github.com/sai-sukrutha/AutomatedQuizEvaluation",
+            "description": [
+                "Developed an Automated Quiz Evaluation system using modules like Image Segmentation Module using CTPN algorithm in TensorFlow, OCR module employing Tesseract, Semantic Text Similarity Module (BERT).",
+                "Developed simple UI for students and instructors for submitting and evaluating question-answer pairs and distributed backend powered by Flask and Docker for scalable modules deployment."
+            ],
+            "skills": [
+                "Flask", "Python", "Machine Learning", "Docker"
+            ]
+        }
+    ]
+}

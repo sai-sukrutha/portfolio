@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Menu from '../Menu';
 import { ProjectProps } from '../Project';
 import { ProjectCard } from '../ProjectComponents';
-// import { ProjectCard, ProjectDescription } from '../ProjectComponents';
 
 const Experiences = () => {
     const [experiences, setExperiences] = useState<ProjectProps[]>([]);
