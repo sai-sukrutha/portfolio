@@ -1,0 +1,24 @@
+{
+    "education": [
+        {
+            "id": "iiith",
+            "name": "International Institute of Information Technology, Hyderabad",
+            "role": "Masters of Technology - Computer Science and Engineering",
+            "img": "images/iiith.jpeg",
+            "titleLink": "https://www.iiit.ac.in/",
+            "location": "Hyderabad, India",
+            "startDate": "2018",
+            "endDate": "2020"
+        },
+        {
+            "id": "vnrvjiet",
+            "name": "VNR Vignana Jyothi Institute of Engineering and Technology",
+            "role": "Bachelor of Technology - Computer Science and Engineering",
+            "img": "images/vnrvjiet.png",
+            "titleLink": "https://vnrvjiet.ac.in/",
+            "location": "Hyderabad, India",
+            "startDate": "2012",
+            "endDate": "2016"
+        }
+    ]
+}

@@ -60,7 +60,11 @@ const Menu = () => {
       <ul>
         <div className={menuOpen ? 'open' : 'close'}>
           <li>
-            <NavLink to='/experience'>Experience</NavLink>
+            <NavLink to='/'>Home</NavLink>
+          </li>
+          <li>
+          {/* <NavLink to='/experiences'>Experience</NavLink> */}
+            <NavLink to='/experiences'>Work</NavLink>
           </li>
           <li>
             <NavLink to='/education'>Education</NavLink>

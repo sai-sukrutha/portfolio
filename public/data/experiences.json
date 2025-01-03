@@ -1,0 +1,34 @@
+{
+    "experiences": [
+        {
+            "id": "mirelz",
+            "name": "Mirelz AI",
+            "role": "Software Engineer, Full Stack Developer",
+            "img": "images/mirelz.jpeg",
+            "titleLink": "https://mirelz.com/",
+            "location": "Hyderabad, India",
+            "startDate": "June 2020",
+            "endDate": "June 2023"
+        },
+        {
+            "id": "adobe",
+            "name": "Adobe",
+            "role": "Summer Product Intern",
+            "img": "images/adobe.png",
+            "titleLink": "https://www.adobe.com/",
+            "location": "Hyderabad, India",
+            "startDate": "May 2019",
+            "endDate": "July 2019"
+        },
+        {
+            "id": "tcs",
+            "name": "Tata Consultancy Services",
+            "role": "Systems Engineer",
+            "img": "images/tcs.png",
+            "titleLink": "https://www.tcs.com/",
+            "location": "Hyderabad, India",
+            "startDate": "August 2016",
+            "endDate": "July 2018"
+        }
+    ]
+}

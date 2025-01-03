@@ -5,7 +5,7 @@ import App from './App';
 // import { BrowserRouter } from 'react-router-dom';
 
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
-import Experience from './components/pages/Experience';
+import Experiences from './components/pages/Experiences';
 import Education from './components/pages/Education';
 import Projects from './components/pages/Projects';
 import { ErrorPage } from './components/ErrorPage';
@@ -18,16 +18,19 @@ const router  = createBrowserRouter([
     errorElement: <ErrorPage />
   }, 
   {
-    path: '/experience',
-    element: <Experience />,
+    path: '/experiences',
+    element: <Experiences />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/education',
     element: <Education />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/projects',
     element: <Projects />,
+    errorElement: <ErrorPage />
   }
 ]);
 
