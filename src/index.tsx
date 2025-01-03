@@ -6,8 +6,10 @@ import App from './App';
 
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
 import Experiences from './components/pages/Experiences';
+import Experience from './components/pages/Experience';
 import Education from './components/pages/Education';
 import Projects from './components/pages/Projects';
+import Project from './components/pages/Project';
 import { ErrorPage } from './components/ErrorPage';
 
 // Updated from BrowserRouter to RouterProvider(new in react-router-dom)
@@ -23,6 +25,11 @@ const router  = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
+    path: '/experiences/:experienceId',
+    element: <Experience />,
+    errorElement: <ErrorPage />
+  },
+  {
     path: '/education',
     element: <Education />,
     errorElement: <ErrorPage />
@@ -30,6 +37,11 @@ const router  = createBrowserRouter([
   {
     path: '/projects',
     element: <Projects />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/projects/:projectId',
+    element: <Project />,
     errorElement: <ErrorPage />
   }
 ]);

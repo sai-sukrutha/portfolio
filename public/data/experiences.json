@@ -8,7 +8,18 @@
             "titleLink": "https://mirelz.com/",
             "location": "Hyderabad, India",
             "startDate": "June 2020",
-            "endDate": "June 2023"
+            "endDate": "June 2023",
+            "description": [
+                "Full stack development to develop virtual try-on and interactive 360° experiences for fashion retail using React, TypeScript, NodeJS, Express and MongoDB.",
+                "Engineered Admin Configurator tool, that enhances customization of rendering and try-on experience while increasing efficiency of 3d asset generation and deployment by 40%.",
+                "Spearheaded realistic rendering of jewelry and created custom real-time shaders for complex, intricate diamonds and metals using Three.js and GLSL that is 80% close to real-world.",
+                "Mentored the rendering team and researched on recent developments in the graphics field. Designed and maintained highperformance rendering pipelines for jewelry.",
+                "Collaborated with clients to define project requirements for tailored projects like custom Ring Builder tool and video call based virtual shopping with live try-on using Twilio, React.",
+                "Created automation scripts using Python, Node.js for deployment and 3D file handling, optimizing workflows by 20%."
+            ],
+            "skills": [
+                "React", "TypeScript", "JavaScript", "NodeJS", "Express", "MongoDB", "Three.js", "GLSL"
+            ]
         },
         {
             "id": "adobe",
@@ -18,7 +29,14 @@
             "titleLink": "https://www.adobe.com/",
             "location": "Hyderabad, India",
             "startDate": "May 2019",
-            "endDate": "July 2019"
+            "endDate": "July 2019",
+            "description": [
+                "Developed ML model for finding hyper-parameter for Click Model which predicts bids,clicks of ads using historical data.",
+                "Explored and implemented various hyper-parameter optimization techniques, metrics to improve efficiency. Implemented Bayesian Hyper-parameter Optimization."
+            ],
+            "skills": [
+                "Python", "Machine Learning", "PostgreSQL", "Jupyter Notebook"
+            ]
         },
         {
             "id": "tcs",
@@ -28,7 +46,15 @@
             "titleLink": "https://www.tcs.com/",
             "location": "Hyderabad, India",
             "startDate": "August 2016",
-            "endDate": "July 2018"
+            "endDate": "July 2018",
+            "description": [
+                " Worked for McAfee AntiVirus for Linux, enhancing functionality like CD Build, Update Manager etc., through application development with C++ and Shell scripting in Ubuntu.",
+                "Responsible for development and sprint planning, providing support for new Ubuntu releases and updates to all third-party libraries, A testing and sign-off, code analysis using Coverity, staging sign-off and production testing.",
+                "Accountable for end-to-end Testing in all locales and Live Virus Testing in client premises.Single-handedly automated QA testing using SikuliX in Python reducing manual testing time by 30%."
+            ],
+            "skills": [
+                "C++", "Shell scripting", "Python", "SikuliX"
+            ]
         }
     ]
 }

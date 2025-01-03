@@ -76,3 +76,45 @@ $responsive_breakpoint2: 680px;
 
 
 }
+
+
+.page {
+    display:flex;
+    flex-direction: column;
+    padding: 3px;      // within objects of card
+    margin: 4px;       // outside the card
+
+    .card_title {
+        a {
+            text-decoration: none;
+            color: $accent_color;
+        }
+
+        a:hover {
+            color: $accent_lighter;
+        }
+    }
+
+    .card_role {
+        // font-weight: bold;
+        font-weight: 500;
+    }
+
+    .vertical-list {
+
+        display: flex;
+        flex-direction: row;
+        float: left;
+
+        .vertical-item {
+            list-style: none;
+            border-radius: 0.5rem;
+            border-style: none;
+            color: $white_text;
+            background-color: $accent_color;
+            padding: 0.5rem;
+            margin: 0 0.5rem;
+        }
+    }
+
+}

@@ -33,6 +33,7 @@ const Education = () => {
             <div className='wrapper'>
                 {education.map((edu:ProjectProps) => (
                     <ProjectCard 
+                        type = "Education"
                         key = {edu.id}
                         id = {edu.id}
                         name = {edu.name}

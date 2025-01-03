@@ -34,6 +34,7 @@ const Experiences = () => {
             <div className='wrapper'>
                 {experiences.map((experience:ProjectProps) => (
                     <ProjectCard 
+                        type = "Experience"
                         key = {experience.id}
                         id = {experience.id}
                         name = {experience.name}
@@ -43,6 +44,8 @@ const Experiences = () => {
                         location= {experience.location}
                         startDate= {experience.startDate}
                         endDate = {experience.endDate}
+                        description= {experience.description}
+                        skills = {experience.skills}
                     />
                 ))}
             </div>
