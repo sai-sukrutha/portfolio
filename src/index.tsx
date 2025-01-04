@@ -10,6 +10,7 @@ import Experience from './components/pages/Experience';
 import Education from './components/pages/Education';
 import Projects from './components/pages/Projects';
 import Project from './components/pages/Project';
+import Interests from './components/pages/Interests';
 import { ErrorPage } from './components/ErrorPage';
 
 // Updated from BrowserRouter to RouterProvider(new in react-router-dom)
@@ -42,6 +43,11 @@ const router  = createBrowserRouter([
   {
     path: '/projects/:projectId',
     element: <Project />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/interests',
+    element: <Interests />,
     errorElement: <ErrorPage />
   }
 ]);

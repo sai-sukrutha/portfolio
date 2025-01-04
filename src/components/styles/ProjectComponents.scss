@@ -83,6 +83,7 @@ $responsive_breakpoint2: 680px;
     flex-direction: column;
     padding: 3px;      // within objects of card
     margin: 4px;       // outside the card
+    width: 80vw;
 
     .card_title {
         a {
@@ -96,15 +97,16 @@ $responsive_breakpoint2: 680px;
     }
 
     .card_role {
-        // font-weight: bold;
         font-weight: 500;
     }
 
     .vertical-list {
-
         display: flex;
         flex-direction: row;
         float: left;
+        // width: 80vw;
+        flex-wrap: wrap;
+        text-align: justify;
 
         .vertical-item {
             list-style: none;
@@ -113,7 +115,7 @@ $responsive_breakpoint2: 680px;
             color: $white_text;
             background-color: $accent_color;
             padding: 0.5rem;
-            margin: 0 0.5rem;
+            margin: 0.5rem 0.5rem;
         }
     }
 

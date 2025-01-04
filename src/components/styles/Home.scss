@@ -1,11 +1,19 @@
 @import "colors";
 
+$responsive_breakpoint: 480px;
+
+.link {
+    text-decoration: none;
+    color: $accent_lighter;
+}
+
 .topic-header {
-    color: black;
+    color: $black_text;
     font-family: 'Arial Narrow', sans-serif;
     font-size: calc(10px + 10vmin);
     text-align: left;
     padding-left: 7%;
+    padding-top: 3%;
 
 }
 
@@ -15,14 +23,83 @@
     color: $centre_color;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $responsive_breakpoint) {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
 .topic-para {
-    color: black;
+    color: $black_text;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: calc(5px + 2vmin);
-    text-align: left;
-    padding-left: 8%;
-    padding-top: 2%;
-    // padding: 0.1%;
+    font-size: medium;
+    padding-left: 5%;
+    padding-top: 0.5rem;
+    text-align: justify;
+    width: 60vw;
+    margin: 1rem;
+    // border: 1px;
+    // border-style: solid;
+    // border-radius: 0.5rem;
+    // border-color: $accent_lighter;
+    display: inline-flex;
+    flex-direction: column;
+    // float:left;
+
+    p {
+        margin: 0.4rem;
+    }
+}
+
+.carousel {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 0.5rem 1rem;
+    margin: 2rem 2rem;
+    z-index: -1;
+
+    img {
+        // width: 200px;
+        // height: 200px;
+        width: 5%;
+        // height: 10%;
+        // height: calc(0.01 * width);
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+.contact-logos{
+    display: flex;
+    flex-direction: row;
+    margin: 1.8rem 0.1rem;
+
+    @media (max-width: $responsive_breakpoint) {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact-item {
+        padding: 0.1rem;
+        margin: 0.1rem 0.3rem;
+    }
+
+    .icon {
+        // margin: 0.1rem 0.3rem;
+        font-size: 1.2rem;
+    }
+
+    .only-icon {
+        // margin: 0.1rem 0.3rem;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $black_text;
+    }
 }
 
 .topic-button {
@@ -41,4 +118,13 @@ button {
     display: inline-block;
     font-size: calc(8px + 2vmin);;
     cursor: pointer;
+}
+
+
+footer {
+    position:relative;    // Always in the bottom
+    bottom:0; 
+    padding: 0.5rem;
+    font-size: x-small;
+    text-align: center;   
 }
