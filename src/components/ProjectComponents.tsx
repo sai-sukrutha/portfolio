@@ -5,6 +5,7 @@ import {PiMapPin, PiCalendarBlank  } from 'react-icons/pi'
 import { Link } from 'react-router-dom';
 import { Key } from 'react';              // TODO: Is this needed
 
+// TODO: Add checks for optional data
 // TODO: Make entire card clickable
 // TODO: Make the card component more attractive and modern style (Maybe can have squares - 2 in a row => Compulsary for projects)
 
@@ -46,9 +47,14 @@ export const ProjectCard = (props: ProjectProps) => {
 
 
 export const ProjectDescription = (props: ProjectProps) => {
+  let title = <h2 className='card_title'>{props.name}</h2>;
+  if(props.titleLink) {
+    title = <h2 className='card_title'><a href={props.titleLink} target='_blank'>{props.name}</a></h2>
+  }
+
   return (
     <div className='page'>
-      <h2 className='card_title'><a href={props.titleLink} target='_blank'>{props.name}</a></h2>
+      {title}
       {props.type === "Experience" && (
         <div>
           <p className='card_role'>{props.role}</p>

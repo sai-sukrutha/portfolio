@@ -1,6 +1,25 @@
 {
     "experiences": [
         {
+            "id": "jellybean",
+            "name": "Jellybean",
+            "role": "Product Development Intern",
+            "img": "images/jellybean.jpeg",
+            "titleLink": "https://www.linkedin.com/company/jellybean-life",
+            "location": "Remote",
+            "startDate": "December 2023",
+            "endDate": "May 2024",
+            "description": [
+                "Built a personalized employee rewards and benefits platform using React, Django, and PostgreSQL, increasing rewards and allowances utilization by over 30% compared to conventional systems.",
+                "Developed a fully responsive web application with React, TypeScript and Tailwind CSS. Incorporated OAuth authentication for user login and integrated Easebuzz and Stripe payment gateways.",
+                "Designed and implemented a claims and reimbursement module using Django, PostgreSQL and GraphQL, enhancing user satisfaction and process efficiency.",
+                "Integrated a fitness module with Google Fit, driving a 20% increase in daily active users and boosting engagement metrics by 15% through personalized insights and gamification."
+            ],
+            "skills": [
+                "React", "TypeScript", "JavaScript", "Django", "PostgreSQL", "GraphQL", "HTML", "CSS", "Tailwind CSS", "OAuth" 
+            ]
+        },
+        {
             "id": "mirelz",
             "name": "Mirelz AI",
             "role": "Software Engineer, Full Stack Developer",

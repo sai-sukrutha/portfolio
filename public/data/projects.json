@@ -13,7 +13,7 @@
         },
         {
             "id": "2",
-            "name": "Ride Sharing Website",
+            "name": "PrimeRide - Ride Sharing Website",
             "titleLink": "https://github.com/sai-sukrutha/PrimeRide",
             "description": [
                 "Designed PrimeRide, a ride-sharing platform where users can offer or join rides across cities using Flask, SQLite with security features like login, email authentication, phone verification via OTP, and passwords encrypted using bcrypt.",
@@ -45,7 +45,50 @@
                 "Developed simple UI for students and instructors for submitting and evaluating question-answer pairs and distributed backend powered by Flask and Docker for scalable modules deployment."
             ],
             "skills": [
-                "Flask", "Python", "Machine Learning", "Docker"
+                "Flask", "Python", "Machine Learning","Artificial Intelligence", "Docker"
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Wikipedia Search Engine",
+            "titleLink": "https://github.com/sai-sukrutha/Wikipedia-Search-Engine",
+            "description": [
+                "Implemented a Search Engine using Wikipedia data with Indexing and Searching capabilities."
+            ],
+            "skills": [
+                "Python", "Information Retrieval"
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Debiasing Word Embedding",
+            "titleLink": "https://github.com/sai-sukrutha/Gender-Bias-in-Word-Embeddings",
+            "description": [
+                "Word Embedding being a great representation of words and capturing relation among words, also capture stereotypes. We have explored different types of biases in word embedding and de-biased gender-based stereotypes in Indian context using PCA and Classification."
+            ],
+            "skills": [
+                "Python", "Natural Language Processing(NLP)", "Jupyter Notebook"
+            ]
+        },
+        {
+            "id": "6",
+            "name": "In Pursuit of Happiness: Modelling Human Emotion",
+            "titleLink": "https://varunbhtt21.github.io/pursuit_of_happiness/",
+            "description": [
+                "CL-Aff Shared Task in AffCon 2019 : Challenge to understand, analyse and model one facet of human affect - Happiness. Implemented and explored several models to understand the Agency and Social attributes of Happiness using HappyDB dataset."
+            ],
+            "skills": [
+                "Python","Machine Learning", "Natural Language Processing(NLP)", "Jupyter Notebook"
+            ]
+        },
+        {
+            "id": "7",
+            "name": "Mr.Meeny - Fish Game",
+            "description": [
+                "Mr.Meeny, the main character of game is a fish which moves forward by eating smaller fish to get points and avoiding obstacles to save its life. It is a single-player 2D Windows Desktop game."
+            ],
+            "skills": [
+                "C#", "XNA Game Studio", "Visual Studio Code"
             ]
         }
     ]
