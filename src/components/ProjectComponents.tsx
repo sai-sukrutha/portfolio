@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { Key } from 'react';              // TODO: Is this needed
 
 // TODO: Add checks for optional data
-// TODO: Make entire card clickable
 // TODO: Make the card component more attractive and modern style (Maybe can have squares - 2 in a row => Compulsary for projects)
 
 // In title_link, we open description page for Experiences, Projects. Open collage website link in Education
@@ -18,18 +17,20 @@ export const ProjectCard = (props: ProjectProps) => {
   if (props.type === "Project"){
     path = "/projects/";
   }
+
+  // TODO: Make entire card clickable
+  let link=  <Link to={`${path}${props.id}`} state={props}>{props.name}</Link>;
+  if (props.type === "Education") {
+    link = <a href={props.titleLink} target="_blank" rel="noopener noreferrer">{props.name}</a>;
+  }
+
   return (
     <div className='card'>
         {props.img && (<img className='card_img' src={props.img} alt={altText}/>)}
         <div className='card_body' >
-            { (props.type === "Education") ?
-              (<h2 className='card_title'>
-                  <a href={props.titleLink} target='_blank'>{props.name}</a>
-              </h2>)
-              : (<h2 className='card_title'>
-                  <Link key={props.name} to={`${path}${props.id}`} state={props}>{props.name}</Link>
-                </h2>)
-            }
+            <h2 className='card_title'>
+              {link}
+            </h2>
             {props.role && (<p className='card_role'>{props.role}</p>)}
             { (props.type === "Education") && 
                 (
@@ -49,7 +50,7 @@ export const ProjectCard = (props: ProjectProps) => {
 export const ProjectDescription = (props: ProjectProps) => {
   let title = <h2 className='card_title'>{props.name}</h2>;
   if(props.titleLink) {
-    title = <h2 className='card_title'><a href={props.titleLink} target='_blank'>{props.name}</a></h2>
+    title = <h2 className='card_title'><a href={props.titleLink} target='_blank' rel="noopener noreferrer">{props.name}</a></h2>
   }
 
   return (

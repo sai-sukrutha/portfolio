@@ -103,9 +103,22 @@ $responsive_breakpoint: 480px;
 }
 
 .topic-button {
-    padding-top: 3%;
-    text-align: left;
-    padding-left: 12%;
+    margin: 0.1rem 0.3rem;
+    padding: 2% 18%;
+    text-align: centre;
+
+    a {
+        text-decoration: none;
+        color: $white_text
+    }
+
+    .active {
+        background-color: $accent_lighter;
+    }
+
+    a:hover {      // TODO: No need for not active check I felt
+        color: $white_dark_text;
+    }
 }
 
 button {

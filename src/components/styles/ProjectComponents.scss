@@ -32,6 +32,7 @@ $responsive_breakpoint2: 680px;
     min-width: 80%;
     max-width: 90%;
     display: flex;
+    // cursor: pointer;
 
     @media (max-width: $responsive_breakpoint) {
         flex-direction: column;
