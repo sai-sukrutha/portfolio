@@ -42,7 +42,7 @@ function Home() {
                     </div>
 
                     <div className='topic-button'>
-                        <button><a href="https://drive.google.com/file/d/1Qr1cuQCQ5ioUkVt-gJrD9Ny6SgW1vy3A/view?usp=sharing" target='_blank' rel="noopener noreferrer">View Resume</a></button>
+                        <button><a href="https://drive.google.com/file/d/1f_R0EObFsurdmIz0JnFB3JS_mz-tmv1x/view?usp=sharing" target='_blank' rel="noopener noreferrer">View Resume</a></button>
                     </div>
                 </div>
 
