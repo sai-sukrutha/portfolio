@@ -2,7 +2,8 @@ import './styles/Home.scss';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
-import {PiLinkedinLogoBold, PiGithubLogoBold, PiAtBold, PiMapPinAreaBold, PiMonitor} from 'react-icons/pi'
+import {PiLinkedinLogoBold, PiGithubLogoBold, PiAtBold, PiMapPinAreaBold, PiMonitor} from 'react-icons/pi';
+import Typewriter from 'react-ts-typewriter';
 
 // TODO: Fill all the details from data file (json?) later including experience and all
 // TODO: Carousal images
@@ -15,7 +16,7 @@ function Home() {
     return(
         <div>
             <div className="topic-header" >
-                Hello I'm <div className='topic-header-color'> Sai Sukrutha.</div>
+                Hello I'm <div className='topic-header-color'><Typewriter text="Sai Sukrutha" loop={true} speed={200} /></div>
             </div>
             <div className="content">
                 <div className='topic-para' >
@@ -26,7 +27,7 @@ function Home() {
                     <p>I like to create art as well. Find out more about me on <Link className="link" to='/interests'>Interests</Link> Page
                     </p> */}
 
-                    <p>Software Engineer <PiMonitor className='icon'/> by choice and passion.</p>
+                    <p>Software Engineer by choice and passion.</p>
                     <p>Full Stack Developer with 5+ years of experience in developing scalable 
                     web applications using React, TypeScript and NodeJS delivering revolutionary digital experiences</p>
                     <p>Highly motivated individual, believes in constant learning and always enthusiastic to learn and try new things.</p>
@@ -34,7 +35,7 @@ function Home() {
                     </p>
 
                     <div className="contact-logos">
-                        <p className="contact-item"><PiAtBold className='icon'/>csaisukruth@gmail.com</p>
+                        <p className="contact-item"><PiAtBold className='icon'/>csaisukrutha@gmail.com</p>
                         <p className="contact-item"><PiMapPinAreaBold className='icon'/>Plano, Texas</p>
                         <a className="contact-item only-icon" href="https://www.linkedin.com/in/sai-sukrutha-chamakoora-375018191/" target='_blank' rel="noopener noreferrer"><PiLinkedinLogoBold/></a>
                         <a className="contact-item only-icon" href="https://github.com/sai-sukrutha" target='_blank' rel="noopener noreferrer"><PiGithubLogoBold/></a>
